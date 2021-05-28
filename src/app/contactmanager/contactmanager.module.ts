@@ -14,6 +14,7 @@ const routes: Routes = [
   {
     path: '', component: ContactmanagerAppComponent,
     children: [
+      { path: ':id', component: MainContentComponent },
       { path: '', component: MainContentComponent }
     ]
   },
@@ -32,6 +33,7 @@ const routes: Routes = [
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
+
     RouterModule.forChild(routes)
   ]
 })
