@@ -1,5 +1,5 @@
 export interface Note {
-    id: number;
-    title: string;
-    date: Date;
+    id: number | undefined;
+    title: string | undefined;
+    date: Date | undefined;
 }

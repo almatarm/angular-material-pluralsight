@@ -7,8 +7,9 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '../shared/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotesComponent } from './components/notes/notes.component';
+import { NewContactDialogComponent } from './components/new-contact-dialog/new-contact-dialog.component';
 
 
 const routes: Routes = [
@@ -28,14 +29,15 @@ const routes: Routes = [
     MainContentComponent,
     SidenavComponent,
     ToolbarComponent,
-    NotesComponent
+    NotesComponent,
+    NewContactDialogComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
-
+    ReactiveFormsModule,
     RouterModule.forChild(routes)
   ]
 })

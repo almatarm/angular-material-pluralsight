@@ -1,11 +1,11 @@
 import { Note } from "./note";
 
-export interface User {
-    id: number;
-    birthDate: Date;
-    name: string;
-    avatar: string;
-    bio: string;
+export class User {
+    id: number | undefined;
+    birthDate: Date | undefined;
+    name: string | undefined;
+    avatar: string | undefined;
+    bio: string | undefined;
 
-    notes: Note[];
+    notes: Note[] = [];
 }
